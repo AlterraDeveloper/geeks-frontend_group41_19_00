@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 50%;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: none;
+    overflow: hidden;
+    color: black;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.94);
+    z-index: 1;
+}
+
+.flashlight {
+    top: 150px;
+    left: 500px;
+    display: none;
+    position: absolute;
+    transform: translate(calc(-50% - 100px), calc(-50% - 100px));
+    width: 1px;
+    height: 1px;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+
+    border: 30px solid white;
+    background-color: white;
+
+    box-shadow: 0 0 20px 30px white;
+    -webkit-box-shadow: 0 0 20px 30px white;
+    -moz-box-shadow: 0 0 20px 30px white;
+    z-index: 5;
+}
+
+.text {
+    z-index: 10;
+    position: relative;
+    user-select: none;
+}
