@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.container {
+    width: 30%;
+    box-shadow: 3px 3px 5px 2px #333;
+    border-radius: 20px;
+    height: 70vh;
+}
+
+.header {
+    background-color: aquamarine;
+    padding: 10px 50px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    height: 25%;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 20px 0 0;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+}
+
+.body {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+
+.weekdays,
+.days {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.days {
+    height: 100%;
+}
+
+.weekday {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.day {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.weekday,
+.day,
+.days div {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+}
+
+.day:hover {
+    border: 1px solid aquamarine;
+    cursor: pointer;
+}
+
+.day.current {
+    background-color: aquamarine;
+    color: black;
+}
